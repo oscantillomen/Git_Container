@@ -1,5 +1,5 @@
 module BookKeeping
-VERSION = 3
+  VERSION = 3
 end
 # Hamming Class
 class Hamming
