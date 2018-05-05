@@ -1,7 +1,7 @@
 module BookKeeping
   VERSION = 3
 end
-# Hamming Class
+# Calculate the Hamming difference between two DNA strands.
 class Hamming
   def self.compute(dna1, dna2)
     raise ArgumentError if dna1.size != dna2.size
