@@ -6,28 +6,18 @@ class Complement
   def self.of_dna(strand)
     complement = ''
     strand.size.times do |x|
-      rna = tran(strand[x])
-      if rna != ''
-        complement += rna
-      else
-        return ''
-      end
+      tran(strand[x]) != '' ? complement += tran(strand[x]) : (return '')
     end
     complement
   end
 
   def self.tran(nucl)
     case nucl
-      when 'G'
-        'C'
-      when 'C'
-        'G'
-      when 'T'
-        'A'
-      when 'A'
-        'U'
-      else
-        ''
+    when 'G' then 'C'
+    when 'C' then 'G'
+    when 'T' then 'A'
+    when 'A' then 'U'
+    else ''
     end
   end
 end
