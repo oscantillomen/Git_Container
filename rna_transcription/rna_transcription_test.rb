@@ -42,7 +42,10 @@ class RnaTranscriptionTest < Minitest::Test
     #skip
     assert_equal '', Complement.of_dna('ACGTXXXCTTAA')
   end
-
+  
+  module BookKeeping
+    VERSION = 4
+  end
   # Problems in exercism evolve over time, as we find better ways to ask
   # questions.
   # The version number refers to the version of the problem you solved,
