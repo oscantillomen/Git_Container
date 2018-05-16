@@ -4,7 +4,8 @@ class Squares
     @num = num
   end
 
-  def square_of_sum
+  def square_of_s
+    um
     sum = 0
     @num.times { |x| sum += x + 1 }
     sum**2

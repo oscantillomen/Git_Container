@@ -7,7 +7,6 @@ class Hamming
     raise ArgumentError if dna1.size != dna2.size
     c = 0
     dna1.size.times { |x| c += 1 if dna1[x] != dna2[x] }
-    puts c
+    c
   end
-  compute(gets.to_s, gets.to_s)
 end
