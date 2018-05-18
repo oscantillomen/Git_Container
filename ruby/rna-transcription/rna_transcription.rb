@@ -1,3 +1,6 @@
+module BookKeeping
+  VERSION = 4
+end
 # Class Given a DNA strand, return its RNA Complement Transcription.
 class Complement
   def self.of_dna(strand)

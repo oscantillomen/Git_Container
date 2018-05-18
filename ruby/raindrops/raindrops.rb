@@ -1,3 +1,6 @@
+module BookKeeping
+  VERSION = 1
+end
 # Convert a number to a string, Pling, Plang, Plong.
 class Raindrops
   def self.convert(num)
